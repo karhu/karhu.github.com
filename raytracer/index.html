@@ -1,0 +1,190 @@
+
+
+
+<!-- Twitter Bootstrap -->
+
+
+<!-- Zocial - Social Media Icons -->
+
+
+<!-- Lightbox image viewer. -->
+
+
+
+
+<!-- User stuff -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>raytracer | Adrian Blumer</title>
+  <meta http-equiv="X-Powered-By" content="DocPad"/>
+  <link  rel="stylesheet" href="/vendor/twitter-bootstrap/css/bootstrap.css" /><link  rel="stylesheet" href="/vendor/zocial/zocial.css" /><link  rel="stylesheet" href="/vendor/lightbox/css/lightbox.css" /><link  rel="stylesheet" href="/styles/default.css" />
+
+  <!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class='colorbar_blue'></div>
+
+<div id='header'>
+  <div>
+    <span class='large'>Adrian Blumer</span>
+    <span class='small'> / raytracer</span>
+  </div>
+</div>
+
+<div id="wrapper" > <div id="centered">
+
+
+  <div id='nav'>
+    <ul>
+      
+          <li class="inactive">
+              <a href="/">Home</a>
+          </li>
+      
+    </ul>
+    <ul>
+      
+          <li class="inactive">
+              <a href="/terrain_erosion">Terrain Erosion</a>
+          </li>
+      
+          <li class="inactive">
+              <a href="/space_trouble">Space Trouble!</a>
+          </li>
+      
+          <li class="active">
+              <a href="/raytracer">Raytracer</a>
+          </li>
+      
+    </ul>
+
+      <a class='button' 
+      href='https://plus.google.com/103248711709888210421' 
+      style='background-color:#D14836;
+      background-image: url(/vendor/simple-icons/googleplus/googleplus-24.png); 
+      display:inline-block; 
+      border: 1px solid #D14836;'>
+      </a>
+
+      <a class='button' 
+      href='https://www.facebook.com/adrian.blumer' 
+      style='background-color:#3B5998; 
+      background-image: url(/vendor/simple-icons/facebook/facebook-24.png);
+      display:inline-block;
+      border: 1px solid #3B5998;'>
+      </a>
+
+      <a class='button' 
+      href='https://github.com/karhu/' 
+      style='background-color:#4183C4; 
+      background-image: url(/vendor/simple-icons/github/github-24.png); 
+      display:inline-block;
+      border: 1px solid #4183C4;'>
+      </a>
+
+      <a class='button' 
+      href='https://bitbucket.org/karhu' 
+      style='background-color:#003366; 
+      background-image: url(/vendor/icons/bitbucket_24.png); 
+      border: 1px solid #003366;'>
+      </a>
+
+      <a class='button' 
+      href='https://pinboard.in/u:karhu' 
+      style='background-color:#0000FF; 
+      background-image: url(/vendor/simple-icons/pinboard/pinboard-24.png); 
+      border: 1px solid #0000FF;'>
+      </a>
+  </div>
+
+  <div id='main' >
+      <h3>Raytracer</h3>
+
+<p>As part of the <a href="http://graphics.ethz.ch/teaching/imsynth12/home.php">Image Synthesis</a> course at ETH every student wrote and extended a renderer in C++. Here I will present some of the features of my renderer, as well as images produced by it.</p>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/final.png" title="">
+    <img class='centered' width=500px src="/images/raytracing/final.png">
+</a>
+<figcaption> Final image & rendering competition entry. </figcaption></div>
+
+<p>The above image won me the second prize in the rendering competition at the end of the course. The theme for this competition was <em>Opposites</em> and we had to extend our renderer with a set of self-chosen features to create an interesting image.</p>
+
+<p>Some of the features I picked were <strong>Environment Lighting</strong>, <strong>Depth of Field</strong> and <strong>Colored Glass</strong>.</p>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/env.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/env.png">
+</a>
+<figcaption> Environment lighting. </figcaption></div>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/dof.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/dof.png">
+</a>
+<figcaption> Depth of Field. </figcaption></div>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/absorb.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/absorb.png">
+</a>
+<figcaption> Absorption in homogeneous media according to Beer&rsquo;s law. </figcaption></div>
+
+<p>I also implemented <strong>Arbitrary mesh lights</strong> and materials such as <strong>Varnished diffuse</strong> and <strong>Rough dielectrics</strong>.</p>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/mesh_light.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/mesh_light.png">
+</a>
+<figcaption> Donut shaped light source in a cornel box. </figcaption></div>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/glossy.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/glossy.png">
+</a>
+<figcaption> Diffuse sphere with and without glossy coat. </br>The floor&rsquo;s texture is made from perlin-noise. </figcaption></div>
+
+<div class='center_image'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/frost2.png" title="">
+    <img class='centered' width=300px src="/images/raytracing/frost2.png">
+</a>
+<figcaption> Frosted glass simulated as a rough dielectric. </figcaption></div>
+
+<p>My full project report with more technical details can be found <a href="http://graphics.ethz.ch/teaching/imsynth12/competition//2nd%20Place..%20Adrian%20Blumer/report.html">here</a>. I conclude things with a few more pictures from earlier versions of my renderer:</p>
+
+<p></br></p>
+
+<div class='imgLeftCol' style='height: 180px'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/o.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/o.png">
+</a><figcaption> First steps. </figcaption></div>
+
+<div class='imgRightCol' style='height: 180px'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/k.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/k.png">
+</a><figcaption> Second steps. </figcaption></div>
+
+<div class='imgLeftCol'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/f.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/f.png">
+</a><figcaption> Reyes rendering with displacement functions. </figcaption></div>
+
+<div class='imgRightCol'style='height: 220px'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/ao_snowflake.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/ao_snowflake.png">
+</a><figcaption> Snowflake & Ambient Occlusion. </figcaption></div>
+
+<div class='imgLeftCol'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/interestingX1.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/interestingX1.png">
+</a><figcaption> Path traced sculpture. </figcaption></div>
+
+<div class='imgRightCol'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/pmi_long.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/pmi_long.png">
+</a><figcaption> Cornel box rendered using Photon mapping. </figcaption></div>
+
+<div class='imgLeftCol'><a class='view_img' rel="lightbox[st]" href="/images/raytracing/no_moon.png" title="">
+    <img class='centered' width=250px src="/images/raytracing/no_moon.png">
+</a><figcaption> Reyes rendering bug. That&rsquo;s no moon. It&rsquo;s a space station! </figcaption></div>
+
+  </div>
+</div></div>
+  <script defer="defer"  src="/vendor/lightbox/js/jquery-1.7.2.min.js"></script><script defer="defer"  src="/vendor/lightbox/js/lightbox.js"></script>
+</body>
+
+</html>

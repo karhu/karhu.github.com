@@ -33,6 +33,7 @@ a, a:hover {
     text-align: left;
     line-height: 1.8em;
     /*letter-spacing:1px;*/
+
 }
 
 #main h1, h2, h3, h4, h5{
@@ -47,11 +48,29 @@ a, a:hover {
     margin:0;
     padding:0;
     margin-bottom:0.9em;
+    text-align: justify;
 }
 
+
+
 #main img {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     margin-top: 0.5em;    
+}
+
+#main .center_image img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.6em;
+}
+
+#main .center_image
+{
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+    /*border: 1px solid red;*/
 }
 
 #main img.centered {
@@ -95,6 +114,33 @@ a, a:hover {
 }
 #main .thumbs img {
     margin:0;
+}
+
+#main figcaption {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    font-size: 1.0em;
+}
+
+#main .imgLeftCol {
+    /*border: 1px solid red;*/
+    width:49%;
+    float: left;
+    display:block;
+    height: 200px;
+    margin-bottom:35px;
+    clear:both;
+}
+
+#main .imgRightCol {
+    /*border: 1px solid red;*/
+    width:49%;
+    float: left;
+    display:block;
+    height: 200px;
+    margin-bottom:35px;
+
 }
 
 
@@ -171,3 +217,4 @@ div#wrapper{
 
     display: inline-block;
 }
+
